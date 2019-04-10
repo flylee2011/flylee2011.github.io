@@ -1,0 +1,119 @@
+# 主题配置文件
+
+# Schemes
+scheme: Gemini
+
+# footer
+footer:
+  copyright: written by liyifei
+
+# `Follow me on GitHub` banner in the top-right corner.
+github_banner:
+  enable: true
+  permalink: https://github.com/flylee2011
+  title: Follow me on GitHub
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+menu:
+  home: / || home
+  archives: /archives/ || archive
+  #about: /about/ || user
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
+  #commonweal: /404/ || heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# See: https://theme-next.org/docs/theme-settings/sidebar
+# ---------------------------------------------------------------
+
+# Social Links
+social:
+  GitHub: https://github.com/flylee2011 || github
+  E-Mail: mailto:flylee.bjfu@gmail.com || envelope
+  Twitter: https://twitter.com/flylee2011 || twitter
+  FB Page: https://www.facebook.com/yifei.li.102 || facebook
+
+# Sidebar Avatar
+avatar:
+  # In theme directory (source/images): /images/avatar.gif
+  # In site directory (source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: /images/avatar.jpeg
+  # If true, the avatar would be dispalyed in circle.
+  rounded: true
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
+# Reduce padding / margin indents on devices with narrow width.
+mobile_layout_economy: true
+
+# Hide sticky headers and color the menu bar on Safari (iOS / macOS).
+safari_rainbow: true
+
+# ---------------------------------------------------------------
+# Post Settings
+# See: https://theme-next.org/docs/theme-settings/posts
+# ---------------------------------------------------------------
+
+# Automatically Excerpt (Not recommend).
+# Use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 300
+
+# Wechat Subscriber
+wechat_subscriber:
+  enable: true
+  qcode: /images/wechat-qrcode.jpg
+  description: 微信公众号
+
+# Reward (Donate)
+reward_settings:
+  # If true, reward would be displayed in every article by default.
+  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+  enable: true
+  animation: true
+  comment: 一块钱不嫌少~
+
+reward:
+  wechatpay: /images/wechatpay.jpeg
+  alipay: /images/alipay.jpeg
+
+# ---------------------------------------------------------------
+# Comments and Widgets
+# See: https://theme-next.org/docs/third-party-services/comments-and-widgets
+# ---------------------------------------------------------------
+
+# Valine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://valine.js.org
+valine:
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: d1H3Cr32Q6JcuUXRTQehFTwc-gzGzoHsz # your leancloud application appid
+  appkey: 4QPHqT8nKzH80xwc6UPUg8zm # your leancloud application appkey
+  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: retro # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+  language: zh-cn # language, available values: en, zh-cn
+  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  comment_count: true # if false, comment count will only be displayed in post page, not in home page
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+# CNZZ count
+cnzz_siteid: 1276964554
